@@ -1,0 +1,4 @@
+# Table 1 'DGCNN' (runs classic-armadillo-2231 / amber-lake-2306 / fresh-durian-2307, seeds 0/42/123).
+base_config: base_forward.yaml
+model_type: DGCNN
+predict_surface_current: false

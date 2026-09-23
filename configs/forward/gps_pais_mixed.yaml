@@ -1,0 +1,12 @@
+# Table 1 'GPS + PAIS (mixed, matched size)' (run gallant-wildflower-2442):
+# stratified 4/9 mixture of the three sub-corpora at FMNIST+CIFAR size.
+# NOTE: the logged run config records model_type GPSDCC with the directional
+# decoder and physics loss enabled (like gps_pais_dir_phys.yaml), not plain
+# GPS as the row label suggests — see REPRODUCIBILITY.md caveat 18.
+base_config: base_forward.yaml
+model_type: GPSDCC
+direction_conditioned_decoder: true
+use_current_in_direction_decoder: true
+use_physics_loss: true
+residual_scale: 0.1
+dataset_variant: mixed

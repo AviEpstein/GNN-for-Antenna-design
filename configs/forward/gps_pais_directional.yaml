@@ -1,0 +1,6 @@
+# Table 1 'GPS + PAIS + Directional': direction-conditioned decoder, no physics loss.
+# Trained as the GPSDCC model class (see the run map in REPRODUCIBILITY.md).
+base_config: base_forward.yaml
+model_type: GPSDCC
+direction_conditioned_decoder: true
+use_current_in_direction_decoder: true

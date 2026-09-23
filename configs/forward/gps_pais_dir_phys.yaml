@@ -1,0 +1,13 @@
+# Table 1 'GPS + PAIS + Directional + Phys' — single-frequency (2400 MHz)
+# physics-consistency configuration (run fragrant-night-2334: GPSDCC, s=0.1).
+# Released checkpoint: trained_models/fragrant-night-2334_34_34_2400.pt
+# (evaluate it with scripts.evaluate_forward --load_trained_model true).
+base_config: base_forward.yaml
+model_type: GPSDCC
+direction_conditioned_decoder: true
+use_current_in_direction_decoder: true
+use_physics_loss: true
+residual_scale: 0.1
+ff_loss_weight: 0.6
+surface_current_loss_weight: 0.4
+trained_model_path: trained_models/fragrant-night-2334_34_34_2400.pt

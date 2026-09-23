@@ -1,0 +1,3 @@
+# Table 1 'MGN + PAIS' (runs usual-firebrand-2191 / prime-fire-2301 / gentle-cloud-2302, seeds 0/42/123).
+base_config: base_forward.yaml
+model_type: MGN

@@ -1,0 +1,3 @@
+# Table 2 'CMA': CMA-ES over the two 16x16 matrices (sigma 0.2,
+# 100 iterations; see REPRODUCIBILITY.md on the evaluation budget).
+base_config: base_inverse.yaml

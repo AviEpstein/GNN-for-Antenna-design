@@ -1,0 +1,8 @@
+# Table 2 'Diff. - 5 rand.': 5 unfiltered diffusion samples per target
+# (isolates surrogate filtering from the generative prior).
+base_config: base_inverse.yaml
+pretrained_diffusion_model: true
+test_dataset: true
+test_sample: false
+save_random_samples: true
+guidance_scale: 1.0

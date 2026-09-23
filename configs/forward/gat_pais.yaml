@@ -1,0 +1,3 @@
+# Table 1 'GAT + PAIS' (run expert-sound-2179).
+base_config: base_forward.yaml
+model_type: GAT

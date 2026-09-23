@@ -1,0 +1,5 @@
+# Table 1 'GPS + shuffled SC' control (runs skilled-firebrand-2289 / worldly-puddle-2298 / dutiful-breeze-2299).
+# Note: the shipped code permutes current rows WITHIN each example (see REPRODUCIBILITY.md).
+base_config: base_forward.yaml
+model_type: GPS
+shuffle_surface_currents: true

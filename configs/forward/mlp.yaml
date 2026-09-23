@@ -1,0 +1,4 @@
+# Table 1 'MLP' (run lemon-firefly-2216). Train with scripts/train_baseline.py.
+base_config: base_forward.yaml
+model_type: MLP
+predict_surface_current: false

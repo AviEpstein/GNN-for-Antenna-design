@@ -1,0 +1,4 @@
+# Table 1 'GPS' (runs confused-smoke-2225 / vocal-breeze-2275 / rose-capybara-2274, seeds 0/42/123).
+base_config: base_forward.yaml
+model_type: GPS
+predict_surface_current: false

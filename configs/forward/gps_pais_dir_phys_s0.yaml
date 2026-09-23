@@ -1,0 +1,10 @@
+# Table 1 'GPS + PAIS + Dir. + Phys (s=0)' — residual-off ablation (run worthy-snowball-2336).
+# Physics-consistency loss with the learned residual disabled.
+base_config: base_forward.yaml
+model_type: GPSDCC
+direction_conditioned_decoder: true
+use_current_in_direction_decoder: true
+use_physics_loss: true
+residual_scale: 0.0
+ff_loss_weight: 0.6
+surface_current_loss_weight: 0.4

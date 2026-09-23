@@ -1,0 +1,6 @@
+# Table 1 'GPS + pos. aux' control (run vocal-water-2291): auxiliary head predicts
+# node 3D coordinates instead of surface currents (0.1 loss weight, set in the trainer).
+base_config: base_forward.yaml
+model_type: GPS
+predict_surface_current: false
+position_auxiliary_task: true

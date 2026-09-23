@@ -1,0 +1,4 @@
+# Table 1 'Graph U-Net' (run lemon-terrain-2219).
+base_config: base_forward.yaml
+model_type: GRAPH_UNET
+predict_surface_current: false

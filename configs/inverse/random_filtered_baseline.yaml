@@ -1,0 +1,3 @@
+# Control: best-of-500 RANDOM TRAINING geometries scored by the surrogate
+# (top-5 kept) -- separates surrogate filtering from the diffusion prior.
+base_config: base_inverse.yaml

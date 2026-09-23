@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Data / simulation artifacts (never committed — see data/README.md)
+data/downloads/
+data/corpora/
+outputs/
+checkpoints/
+trained_models/
+*.stl
+*.obj
+*.step
+*.cst
+*.mat
+*.npy
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# Model weights (splits/*.pth are the tracked exception)
+*.pt
+*.pth
+!splits/*.pth
+
+# Experiment tracking / logs
+wandb/
+runs/
+logs/
+log/
+*.log
+tensorboard/
+loss_graphs/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Local checkpoint-release staging (uploaded externally, never committed)
+release/
+
+# Colab demo bundle staging + notebook download cache
+demo_bundle_staging/
+.demo_bundle/

@@ -1,0 +1,3 @@
+# Table 2 GA / SA / NN-seeded-SA baselines (500-evaluation budget each),
+# run sequentially by src/inverse/driver.py over the 100 hardest targets.
+base_config: base_inverse.yaml

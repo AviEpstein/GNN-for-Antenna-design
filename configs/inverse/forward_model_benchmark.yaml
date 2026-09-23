@@ -1,0 +1,5 @@
+# Params / GFLOPs / latency of the forward surrogate (Sec. 5.1
+# 'Computational cost').
+base_config: base_inverse.yaml
+batch_size: 32
+use_current_in_direction_decoder: true

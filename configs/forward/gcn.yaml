@@ -1,0 +1,4 @@
+# Table 1 'GCN' (run copper-darkness-2174).
+base_config: base_forward.yaml
+model_type: GCN
+predict_surface_current: false

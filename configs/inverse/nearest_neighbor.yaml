@@ -1,0 +1,2 @@
+# Table 2 'NN': nearest-neighbor retrieval over flattened far-fields.
+base_config: base_inverse.yaml

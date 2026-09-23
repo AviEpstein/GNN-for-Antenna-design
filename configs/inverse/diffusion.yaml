@@ -1,0 +1,9 @@
+# Table 2 'Diff. + surr.': surrogate-filtered diffusion on the 100 hardest
+# PCA-split targets. N=500 candidates per target, top K=5 by GPS+PAIS surrogate
+# MSE exported for CST validation. Requires a trained diffusion checkpoint.
+base_config: base_inverse.yaml
+pretrained_diffusion_model: true
+test_dataset: true
+test_sample: false
+save_random_samples: false
+guidance_scale: 1.0

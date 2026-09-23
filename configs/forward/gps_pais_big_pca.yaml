@@ -1,0 +1,9 @@
+# Table 1 'GPS + PAIS (big-PCA split)': evaluation of the gps_pais_big checkpoint
+# (genial-bush-2194) on the PCA extrapolation split. Evaluation only.
+base_config: base_forward.yaml
+model_type: GPS
+dataset_variant: pca
+train: false
+test: true
+load_trained_model: true
+trained_model_path: trained_models/genial-bush-2194GNN_ff_foward_34_34_2400.pt

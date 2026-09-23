@@ -1,0 +1,4 @@
+# Table 1 'GPS + PAIS' (runs lively-disco-2160 / proud-pine-2271 / warm-dawn-2273, seeds 0/42/123).
+# Override the seed on the command line: --seed 42
+base_config: base_forward.yaml
+model_type: GPS

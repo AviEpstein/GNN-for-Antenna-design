@@ -1,0 +1,5 @@
+# Evaluate the analytic radiation integral against ground truth
+# (Sec. 5.2 'Residual-off ablation': MSE of F_analytic(J) vs F_GT).
+base_config: base_inverse.yaml
+batch_size: 32
+load_trained_model: true

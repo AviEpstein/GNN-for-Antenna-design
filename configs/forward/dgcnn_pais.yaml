@@ -1,0 +1,3 @@
+# Table 1 'DGCNN + PAIS' (runs jolly-vortex-2184 / rose-hill-2309 / elated-sky-2308, seeds 0/42/123).
+base_config: base_forward.yaml
+model_type: DGCNN

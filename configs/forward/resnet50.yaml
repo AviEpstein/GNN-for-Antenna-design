@@ -1,0 +1,4 @@
+# Table 1 'ResNet-50' (run smooth-fire-2214). Train with scripts/train_baseline.py.
+base_config: base_forward.yaml
+model_type: RESNET50
+predict_surface_current: false

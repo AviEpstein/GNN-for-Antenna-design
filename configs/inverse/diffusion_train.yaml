@@ -1,0 +1,7 @@
+# Train the conditional DDPM (T=700, betas 1e-4..0.02, p_uncond=0.1,
+# Adam lr 1e-4, batch 128, 1000 epochs -- pinned in src/diffusion/).
+base_config: base_inverse.yaml
+pretrained_diffusion_model: false
+test_dataset: false
+test_sample: false
+save_random_samples: false

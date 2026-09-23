@@ -1,0 +1,4 @@
+# Table 1 'U-Net' (run hopeful-mountain-2211). Train with scripts/train_baseline.py.
+base_config: base_forward.yaml
+model_type: UNET
+predict_surface_current: false

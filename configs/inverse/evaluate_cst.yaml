@@ -1,0 +1,5 @@
+# Aggregate CST-validated inverse-design results into the Table 2/3 rows.
+# Point cst_output_dirs at one or more CST result directories (or pass
+# --cst_output_dirs on the command line).
+base_config: base_inverse.yaml
+cst_output_dirs: None

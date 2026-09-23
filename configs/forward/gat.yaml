@@ -1,0 +1,4 @@
+# Table 1 'GAT' (run desert-dragon-2180).
+base_config: base_forward.yaml
+model_type: GAT
+predict_surface_current: false

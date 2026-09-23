@@ -1,0 +1,3 @@
+# Table 1 'GCN + PAIS' (run ancient-capybara-2172).
+base_config: base_forward.yaml
+model_type: GCN

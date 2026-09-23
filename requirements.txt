@@ -1,0 +1,23 @@
+# Tested with Python 3.12 and CUDA 12.x.
+# torch / torch-geometric wheels are CUDA-specific: install torch first following
+# https://pytorch.org/get-started/ for your CUDA version, then the rest.
+torch==2.8.0
+torchvision==0.23.0
+torch-geometric==2.6.1
+# Required PyG companion ops (torch_scatter is imported by src/graph/GNN_functions.py,
+# torch_cluster by src/geometry/mesh_functions_pytorch_2.py); install prebuilt wheels
+# from https://data.pyg.org/whl/ matching your torch+CUDA build, e.g.
+#   pip install torch-scatter torch-cluster -f https://data.pyg.org/whl/torch-2.8.0+cu126.html
+gmsh==4.14.0
+torchmetrics==1.8.2
+pytorch-msssim==1.0.0
+numpy==2.2.6
+scipy==1.16.1
+scikit-learn==1.7.1
+pandas==2.3.2
+matplotlib==3.10.6
+trimesh==4.8.0
+cma==4.4.4
+PyYAML==6.0.2
+tqdm==4.67.1
+wandb==0.21.3   # experiment tracking; run with WANDB_MODE=disabled to opt out

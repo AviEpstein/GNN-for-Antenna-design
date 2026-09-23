@@ -1,0 +1,9 @@
+# Table 1 zero-shot 'Classic square patch + parasitic' (64 patches with parasitic
+# reflector; Fig. 2). Evaluation only, with the gps_pais_big checkpoint.
+base_config: base_forward.yaml
+model_type: GPS
+dataset_variant: classic_square_parasitic
+train: false
+test: true
+load_trained_model: true
+trained_model_path: trained_models/genial-bush-2194GNN_ff_foward_34_34_2400.pt

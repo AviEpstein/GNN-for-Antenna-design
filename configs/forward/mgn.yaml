@@ -1,0 +1,4 @@
+# Table 1 'MGN' (runs still-shadow-2186 / lemon-dust-2305 / comic-valley-2304, seeds 0/42/123).
+base_config: base_forward.yaml
+model_type: MGN
+predict_surface_current: false

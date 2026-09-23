@@ -1,0 +1,5 @@
+# Table 1 'GPS + PAIS (big)' (run genial-bush-2194): full 80k union of the three
+# sub-corpora. This checkpoint is also the inverse-design surrogate.
+base_config: base_forward.yaml
+model_type: GPS
+dataset_variant: big

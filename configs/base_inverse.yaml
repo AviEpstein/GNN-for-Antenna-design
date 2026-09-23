@@ -1,0 +1,71 @@
+# Base configuration for the inverse-design experiments (Tables 2-3, Fig. 3).
+# Method configs in configs/inverse/ inherit from this file. Method
+# hyperparameters (DDPM schedule, budgets, GA/SA/CMA settings) are pinned
+# inside the entry points exactly as in the paper's runs; this file supplies
+# paths and the dataset/graph/surrogate keys.
+
+# ---- paths (edit these for your machine) ----
+data_root: data/corpora/
+split_dir: splits/
+path_to_split: splits/pca_extrapolation_split.pth
+surrogate_checkpoint: trained_models/genial-bush-2194GNN_ff_foward_34_34_2400.pt   # GPS+PAIS forward model (run genial-bush-2194)
+checkpoints_path: checkpoints/diffusion/
+diffusion_checkpoint: checkpoints/diffusion/diffusion_model.pt
+output_dir: outputs/inverse/
+manual_targets_dir: data/manual_targets/
+
+# ---- dataset / graph keys read by the loader and the GPS surrogate ----
+data_set_name: FMNIST_CIFAR
+length_unit: "mm"
+frequencies: [2400, 2800, 5200, 5600, 6000]
+frequencies_in_scale: [2.4e9, 2.8e9, 5.2e9, 5.6e9, 6.0e9]
+train_freq_idxs: [1, 2, 3, 4]
+idx_freq: 3                       # 5600 MHz
+multipule_freqs: false
+use_freq_conditioning: false
+freq_mode: 'fixed'
+threshold: 0.5
+freq_num_bands: 4
+freq_max_cycles: 2.0
+freq_k_margin: 0.25
+radiation_image_shape: [34, 34, 1]
+edge_feature_size: 4
+connect_components: None
+per_component_interpolation: true
+strict_pe_check: true
+raw_node_feture_size: 17
+add_radius_graph_edges: true
+merge_duplicate_nodes: true
+use_node_probs: false
+physical_antenna: true
+gps: true
+hetero_graph: false
+add_sphere: false
+sphere_radius: 400
+adapt_output_size: true
+pointcloud_model: false
+load_precomputed_nn: false
+number_of_validation_samples: 15
+dropout: 0.0
+output_in_DB: true
+
+# surrogate (plain pooled GPS+PAIS — the paper's filtering model)
+predict_surface_current: true
+shuffle_surface_currents: false
+position_auxiliary_task: false
+direction_conditioned_decoder: false
+use_current_in_direction_decoder: false
+use_physics_loss: false
+residual_scale: 0.1
+pred_s11_single_freq: false
+s11_loss_weight: 0.5
+
+# augmentation (off)
+k_sphere_neighbores: 2
+num_sphere_nodes: 162
+augment_shift: 0
+augment_rotation: false
+augment_compress_towards_threshold: false
+
+# hardware
+device_num: '0'

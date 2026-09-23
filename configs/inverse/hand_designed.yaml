@@ -1,0 +1,8 @@
+# Fig. 3: hand-designed target patterns (multi-lobe / broad-lobe), CFG w=2.
+# Place one .pt far-field tensor per target in manual_targets_dir.
+base_config: base_inverse.yaml
+pretrained_diffusion_model: true
+test_dataset: false
+test_sample: true
+save_random_samples: false
+manual_targets_guidance_scale: 2.0
