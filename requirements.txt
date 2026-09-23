@@ -8,7 +8,7 @@ torch-geometric==2.6.1
 # torch_cluster by src/geometry/mesh_functions_pytorch_2.py); install prebuilt wheels
 # from https://data.pyg.org/whl/ matching your torch+CUDA build, e.g.
 #   pip install torch-scatter torch-cluster -f https://data.pyg.org/whl/torch-2.8.0+cu126.html
-gmsh==4.14.0
+gmsh==4.14.0    # binary links against system libGLU: on headless machines, apt install libglu1-mesa
 torchmetrics==1.8.2
 pytorch-msssim==1.0.0
 numpy==2.2.6
