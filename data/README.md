@@ -72,9 +72,35 @@ folder must look like:
 ## 4. Download
 
 The simulated corpora (~80k examples, far-field + surface-current ground
-truth) are being packaged for public hosting; a download link will be added
-here. Until then, the pipeline can be exercised end-to-end on self-generated
-geometries plus your own CST runs.
+truth, **processed form**: the `processed/processed_data_*.pt` files the
+loader reads) are published as per-corpus tar.gz shards with a sha256
+manifest, mirrored in two places:
+
+- **Hugging Face Hub** (primary): https://huggingface.co/datasets/AviEpstein/gnn-antenna-design-dataset
+- **Zenodo** (archival, citable DOI): see the DOI badge in the top-level README
+
+From the repo root (stdlib only, no extra installs):
+
+```bash
+python scripts/download_corpora.py --list            # corpora + sizes
+python scripts/download_corpora.py                   # everything: ~36 GB download, ~110 GB on disk
+python scripts/download_corpora.py --corpora classic_rectangle_patch fmnist_test
+# from Zenodo instead of Hugging Face:
+python scripts/download_corpora.py --base-url https://zenodo.org/records/<id>/files
+```
+
+The script verifies every shard's sha256 and checks per-corpus file counts
+against `manifest.json` — the split files in `splits/` index into these exact
+file sets, so counts must match. It also places
+`data/corpora/dataset_ff_stats.csv` (far-field normalization stats needed by
+training). Manual alternative: download any shard and
+`tar -xzf <shard> -C data/corpora/`.
+
+The **raw CST exports** (`raw/`: meshes + per-frequency far-field /
+surface-current dumps / S-parameters, ~625 GB) are not hosted; they are only
+needed to regenerate the processed files and are available from the authors on
+request. The packaging side lives in `scripts/package_corpora.py` and
+`scripts/upload_corpora_zenodo.py`.
 
 The trained checkpoints (curated release: forward surrogates + diffusion
 model; manifest in REPRODUCIBILITY.md) are packaged separately; a download

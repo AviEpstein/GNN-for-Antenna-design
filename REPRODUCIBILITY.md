@@ -9,7 +9,7 @@ number, and lists what cannot be reproduced from this repository alone.
 | Requirement | Why | Status |
 |---|---|---|
 | CST Studio Suite license | All labels (far-fields, surface currents, S-parameters) and all inverse-design validation come from CST; the simulation step is manual (see data/README.md) | not distributable |
-| Simulated corpora (~530 GB raw / ~80k samples) | training + evaluation data | hosting in preparation; link will be added to data/README.md |
+| Simulated corpora (~80k samples; processed form, ~36 GB download / ~110 GB on disk) | training + evaluation data | hosted on Hugging Face + Zenodo — `python scripts/download_corpora.py`, see data/README.md §4. Raw CST exports (~625 GB) available on request |
 | Trained checkpoints (curated release, one per released row: gps_pais_big surrogate genial-bush-2194; diffusion U-Net; +Phys representative crisp-totem-2365; GPS confused-smoke-2225; GPS+PAIS lively-disco-2160; +PAIS baselines ancient-capybara-2172 (GCN) / expert-sound-2179 (GAT) / fragrant-sun-2223 (Graph U-Net) / rose-hill-2309 (DGCNN) / usual-firebrand-2191 (MGN); each with its config and a metrics.json of re-evaluated Table 1 numbers) | evaluation-only rows, inverse pipeline, per-row load verification | hosting in preparation |
 
 Not hosted (deliberately): the shuffled-SC / pos-aux control runs, the grid

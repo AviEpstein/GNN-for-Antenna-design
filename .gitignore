@@ -9,7 +9,8 @@ venv/
 
 # Data / simulation artifacts (never committed — see data/README.md)
 data/downloads/
-data/corpora/
+data/corpora/*
+!data/corpora/dataset_ff_stats.csv
 outputs/
 checkpoints/
 trained_models/
@@ -45,6 +46,9 @@ loss_graphs/
 
 # Local checkpoint-release staging (uploaded externally, never committed)
 release/
+
+# Corpora release staging (scripts/package_corpora.py output, uploaded externally)
+corpora_release/
 
 # Colab demo bundle staging + notebook download cache
 demo_bundle_staging/
