@@ -16,7 +16,7 @@ authors:
     affiliation: Tel Aviv University
 license: MIT
 preferred-citation:
-  type: conference-paper
+  type: article
   title: "Physics-Augmented Graph Transformers for Patch-Antenna Forward and Inverse Design"
   authors:
     - family-names: Epstein
@@ -27,7 +27,9 @@ preferred-citation:
       given-names: Haim
     - family-names: Wolf
       given-names: Lior
-  collection-title: "2026 IEEE International Workshop on Machine Learning for Signal Processing (MLSP)"
   year: 2026
-  publisher:
-    name: IEEE
+  identifiers:
+    - type: other
+      value: "arXiv:2610.05004"
+      description: "arXiv preprint (cs.LG)"
+  url: "https://arxiv.org/abs/2610.05004"

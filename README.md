@@ -69,8 +69,9 @@ The benchmark pairs generated geometries with CST Microwave Studio simulations a
 (three sub-corpora — FMNIST-only, FMNIST+CIFAR, random-pixel — union ≈80k samples, with
 radiation-pattern and surface-current ground truth). Geometry generation is fully scripted;
 the CST step is manual — see [data/README.md](data/README.md) for solver settings, export
-naming, and the expected on-disk layout. A download link for the simulated corpora will be
-added to data/README.md.
+naming, and the expected on-disk layout. The simulated corpora (processed form, ~36 GB
+download) are hosted on Hugging Face and Zenodo — fetch them with
+`python scripts/download_corpora.py` (see data/README.md §4).
 
 ## Forward problem (Table 1)
 
@@ -126,12 +127,14 @@ python -m scripts.evaluate_cst --help
 ## Citation
 
 ```bibtex
-@inproceedings{epstein2026physics,
-  title     = {Physics-Augmented Graph Transformers for Patch-Antenna Forward and Inverse Design},
-  author    = {Epstein, Avi and Nehemia, Snir and Suchowski, Haim and Wolf, Lior},
-  booktitle = {2026 IEEE International Workshop on Machine Learning for Signal Processing (MLSP)},
-  year      = {2026},
-  publisher = {IEEE}
+@misc{epstein2026physicsaugmentedgraphtransformerspatchantenna,
+      title={Physics-Augmented Graph Transformers for Patch-Antenna Forward and Inverse Design},
+      author={Avi Epstein and Snir Nehemia and Haim Suchowski and Lior Wolf},
+      year={2026},
+      eprint={2610.05004},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2610.05004},
 }
 ```
 
