@@ -38,9 +38,10 @@ METADATA = {
              '(processed graphs, far-fields, surface currents)',
     'upload_type': 'dataset',
     'description': (
-        '<p>Dataset for the paper <a href="https://arxiv.org/abs/2610.05004">'
+        '<p>Dataset for the paper <a href="https://doi.org/10.1109/MLSP68619.2026.11772619">'
         'Physics-Augmented Graph Transformers for Patch-Antenna Forward and Inverse '
-        'Design</a> (arXiv:2610.05004).</p>'
+        'Design</a> (IEEE MLSP 2026, doi:10.1109/MLSP68619.2026.11772619; '
+        'preprint arXiv:2610.05004).</p>'
         '<p>Processed training/evaluation corpora for the GNN-for-Antenna-design '
         'benchmark: ~80k pixelated patch-antenna geometries (Fashion-MNIST, '
         'Fashion-MNIST+CIFAR parasitic, random-pixel, and canonical classic-patch '
@@ -70,6 +71,8 @@ METADATA = {
         {'relation': 'isSupplementTo',
          'identifier': 'https://github.com/AviEpstein/GNN-for-Antenna-design',
          'resource_type': 'software'},
+        {'relation': 'isSupplementTo',
+         'identifier': '10.1109/MLSP68619.2026.11772619'},
         {'relation': 'isSupplementTo',
          'identifier': 'arXiv:2610.05004'},
     ],

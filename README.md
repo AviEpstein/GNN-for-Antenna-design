@@ -127,16 +127,20 @@ python -m scripts.evaluate_cst --help
 ## Citation
 
 ```bibtex
-@misc{epstein2026physicsaugmentedgraphtransformerspatchantenna,
-      title={Physics-Augmented Graph Transformers for Patch-Antenna Forward and Inverse Design},
-      author={Avi Epstein and Snir Nehemia and Haim Suchowski and Lior Wolf},
-      year={2026},
-      eprint={2610.05004},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2610.05004},
-}
+@INPROCEEDINGS{11772619,
+  author={Epstein, Avi and Nehemia, Snir and Suchowski, Haim and Wolf, Lior},
+  booktitle={2026 IEEE 36th International Workshop on Machine Learning for Signal Processing (MLSP)}, 
+  title={Physics-Augmented Graph Transformers For Patch-Antenna Forward And Inverse Design}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Modeling;Global Positioning System;Current;Geometry;Printing;Surfaces;Physics;Antenna radiation patterns;Antennas;Learning (artificial intelligence);Graph neural networks;geometric deep learning;signal reconstruction;antenna design;electromagnetic simulation;diffusion models;surrogate modeling},
+  doi={10.1109/MLSP68619.2026.11772619}}
 ```
+
+Published version: [doi:10.1109/MLSP68619.2026.11772619](https://doi.org/10.1109/MLSP68619.2026.11772619)
+· preprint: [arXiv:2610.05004](https://arxiv.org/abs/2610.05004)
 
 ## License
 
